@@ -8,5 +8,14 @@ namespace SisVet.Model
         public string Tipo { get; set; }
 
         public ICollection<Raca> Racas { get; set; } = new List<Raca>();
+
+        public TipoAnimal()
+        {
+        }
+
+        public TipoAnimal(int id)
+        {
+            Id = id;
+        }
     }
 }

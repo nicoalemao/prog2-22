@@ -4,6 +4,9 @@ namespace SisVet.Model
 {
     public class Atendimento
     {
+        private int atendimentoId;
+
+
         public int Id { get; set; }
         public DateTime DataHora { get; set; }
         public int ClinicaId { get; set; }
@@ -13,5 +16,14 @@ namespace SisVet.Model
         public int AnimalId { get; set; }
         public Animal Animal{ get; set; }
         public int ProcedimentoId { get; set; }
+
+        public Atendimento()
+        {
+        }
+
+        public Atendimento(int id)
+        {
+            Id = id;
+        }
     }
 }

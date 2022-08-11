@@ -10,7 +10,7 @@ namespace SisVet.Model
         public DateTime DataNascimento { get; set; }
         public double Peso { get; set; }
         public double Altura { get; set; }
-        public double Complimento{ get; set; }
+        public double Comprimento{ get; set; }
         public string Cor { get; set; }
         public int RacaId{ get; set; }
         public Raca Raca{ get; set; }
@@ -18,5 +18,14 @@ namespace SisVet.Model
         public int EnderecoId { get; set; }
         public Endereco Endereco { get; set; }
         public ICollection<Atendimento> Atendimentos { get; set; } = new List<Atendimento>();
+
+        public Animal()
+        {
+        }
+
+        public Animal(int id)
+        {
+            Id = id;
+        }
     }
 }
